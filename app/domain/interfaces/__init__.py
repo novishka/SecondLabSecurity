@@ -1,1 +1,0 @@
-"""Domain interfaces (dependency inversion)."""

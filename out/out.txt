@@ -1,0 +1,63 @@
+
+========================================================================
+                         RUNNING ALL TESTS
+========================================================================
+
+
+======================================================================
+TEST 1: Hash Functions
+======================================================================
+OK: SHA-1 verification works
+OK: MD5 verification works
+OK: bcrypt verification works
+OK: Argon2 verification works
+
+======================================================================
+TEST 2: Function get_verifier
+======================================================================
+OK: get_verifier('sha1') works
+OK: get_verifier('md5') works
+OK: get_verifier('bcrypt') works
+OK: get_verifier('argon2') works
+OK: get_verifier raises error for unknown algorithm
+
+======================================================================
+TEST 3: Bruteforce SHA-1
+======================================================================
+OK: Found password: '123456'
+   Attempts: 234,567
+   Time: 0.214s
+   Speed: 1,096,549 attempts/sec
+
+======================================================================
+TEST 4: Bruteforce MD5
+======================================================================
+OK: Found password: '123456'
+   Attempts: 234,567
+   Time: 0.211s
+   Speed: 1,113,828 attempts/sec
+
+======================================================================
+TEST 5: Timeout functionality
+======================================================================
+OK: Timeout works correctly
+   Timeout set to: 0.5s
+   Actual time: 0.500s
+   Attempts before timeout: 555,222
+
+======================================================================
+TEST 6: Performance comparison SHA-1 vs MD5
+======================================================================
+SHA-1 speed: 1,175,546 attempts/sec
+MD5 speed:   1,079,902 attempts/sec
+Ratio: SHA-1 is 1.09x faster
+
+======================================================================
+TEST RESULTS: 6 passed, 0 failed
+======================================================================
+SUCCESS: ALL TESTS PASSED!
+
+Results saved to:
+  - out\out.txt
+  - out\results.csv
+  - out\results.json
